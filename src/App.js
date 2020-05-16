@@ -6,6 +6,8 @@ import './App.css';
 
 
 import AddTutorial from "./components/add-tutorial.component";
+import TutorialsList from "./components/tutorials-list.component";
+import Tutorial from "./components/tutorial.component";
 
 function App() {
   return (
@@ -31,9 +33,9 @@ function App() {
 
         <div className="container mt-3">
           <Switch>
-            {/* <Route exact path={["/", "/tutorials"]} component={TutorialsList} /> */}
+            {<Route exact path={["/", "/tutorials"]} component={TutorialsList} /> }
             <Route exact path="/add" component={AddTutorial} />
-            {/* <Route path="/tutorials/:id" component={Tutorial} /> */}
+            { <Route path="/tutorials/:id" component={Tutorial} /> }
           </Switch>
         </div>
       </div>
